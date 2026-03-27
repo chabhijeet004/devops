@@ -58,4 +58,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push ${{ vars.DOCKER_USERNAME }}/abc:latest
+          docker push ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
